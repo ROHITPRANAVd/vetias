@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    int w, x, y;
+    
+    scanf("%d", &w); 
+    scanf("%d", &x); 
+    scanf("%d", &y); 
+
+    int fixed_cost = 100;
+
+    int revenue = w * x;
+
+    int total_cost = (w * y) + fixed_cost;
+
+    int profit = revenue - total_cost;
+
+    printf("%d\n", profit);
+    
+    return 0;
+    
+}
+
