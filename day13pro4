@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    int total_students, number_of_teams;
+
+    scanf("%d", &total_students);
+    scanf("%d", &number_of_teams);
+
+    int students_per_team = total_students / number_of_teams;
+    int students_left_out = total_students % number_of_teams;
+
+    printf("%d\n", students_per_team);
+    printf("%d\n", students_left_out);
+
+    return 0;
+}
