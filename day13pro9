@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int total_coins, ben_percent, blackbeard_percent;
+
+    scanf("%d %d %d", &total_coins, &ben_percent, &blackbeard_percent);
+
+    int ben_share = (total_coins * ben_percent) / 100;
+
+    int remaining_after_ben = total_coins - ben_share;
+
+    int blackbeard_share = (remaining_after_ben * blackbeard_percent) / 100;
+
+    int remaining_for_pirates = remaining_after_ben - blackbeard_share;
+
+    int other_pirate_share = remaining_for_pirates / 3;
+
+    printf("%d\n%d\n%d\n", ben_share, blackbeard_share, other_pirate_share);
+
+    return 0;
+}
