@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+void process_case(int case_number, int length, int breadth) {
+    int rope_length = 2 * (length + breadth);
+    int carpet_area = length * breadth;
+
+    printf("Case-%d\n", case_number);
+    printf("Input (stdin)\n");
+    printf("%d\n%d\n", length, breadth);
+    printf("Output (stdout)\n");
+    printf("%d\n%d\n", rope_length, carpet_area);
+}
+
+int main() {
+    int t, length, breadth;
+    scanf("%d", &t);  // Number of test cases
+
+    for(int i = 1; i <= t; i++) {
+        scanf("%d%d", &length, &breadth);
+        process_case(i, length, breadth);
+    }
+
+    printf("*********************************\n");
+
+    return 0;
+}
