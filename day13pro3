@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+void calculate_repayment(int principal, int rate, int years) {
+
+    float interest = (principal * rate * years) / 100.0;
+
+    float amount = principal + interest;
+
+    float discount = 0.02 * interest;
+
+    float final_settlement = amount - discount;
+
+    printf("%.2f\n", interest);
+    printf("%.2f\n", amount);
+    printf("%.2f\n", discount);
+    printf("%.2f\n", final_settlement);
+}
+
+int main() {
+    int principal, rate, years;
+
+    scanf("%d", &principal);
+    scanf("%d", &rate);
+    scanf("%d", &years);
+
+    calculate_repayment(principal, rate, years);
+
+    return 0;
+}
