@@ -1,0 +1,13 @@
+
+#include <stdio.h>
+
+int main()
+{
+    int lh,bh,peri,area;
+    scanf("%d %d",&lh,&bh);
+    peri = 2 * lh + bh;
+    area = lh * bh;
+    printf("%d\n %d",peri,area);
+
+    return 0;
+}
