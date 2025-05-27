@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main() {
+    int w, x, y, profit;
+    scanf("%d %d %d", &w, &x, &y);
+    profit = (w * x) - (w * y) - 100;
+    printf("%d\n", profit);
+    return 0;
+}
