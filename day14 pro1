@@ -1,0 +1,17 @@
+
+#include <stdio.h>
+
+int main()
+{
+    int tp,vp,c;
+    scanf("%d %d",&tp,&vp);
+    c = tp/2 - vp/2;
+        if(c <= vp/2)
+        {
+        printf("%d",c);
+    }else{
+    printf("%d",vp/2);
+    }
+
+    return 0;
+}

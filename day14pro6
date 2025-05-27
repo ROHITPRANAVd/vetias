@@ -1,0 +1,9 @@
+#include <stdio.h>
+int main()
+{
+    int std,team,left;
+    scanf("%d %d",&std,&team);
+    printf("%d\n",std/team);
+    printf("%d",left=std%team);
+    return 0;
+}
