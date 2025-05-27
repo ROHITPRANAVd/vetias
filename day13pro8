@@ -1,0 +1,20 @@
+ #include <stdio.h>
+int main() {
+    float price1, price2, discount;
+    float total, discounted_price, amount_saved;
+    scanf("%f", &price1);
+    scanf("%f", &price2);
+    scanf("%f", &discount);
+
+    total = price1 + price2;
+
+    discounted_price = total - (total * discount / 100);
+
+    amount_saved = total - discounted_price;
+
+    printf("%.2f\n", total);
+    printf("%.2f\n", discounted_price);
+    printf("%.2f\n", amount_saved);
+
+  return 0;
+}
