@@ -1,0 +1,16 @@
+
+#include <stdio.h>
+
+int main()
+{
+    int p,r,yr;
+    scanf("%d %d %d",&p,&r,&yr);
+    float interest,tlamt,dis,flamt;
+    interest = (p* r*yr )/100;
+    tlamt =p + interest;
+    dis = (2.0 /100 )* interest;
+    flamt = tlamt - dis;
+    printf("%.2f\n %.2f\n %.2f\n %.2f\n",interest,tlamt,dis,flamt);
+
+    return 0;
+}
